@@ -1,0 +1,78 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Music Generator</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>
+
+<i class="fa-solid fa-music"></i>
+
+AI Music Generator
+
+</h1>
+
+<p>
+
+Generate brand-new melodies using an LSTM neural network.
+
+</p>
+
+<button id="generateBtn">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+Generate Music
+
+</button>
+
+<div id="status">
+
+Ready to generate music.
+
+</div>
+
+<a
+
+id="downloadBtn"
+
+href="#"
+
+style="display:none;">
+
+<i class="fa-solid fa-download"></i>
+
+Download MIDI
+
+</a>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
+```
